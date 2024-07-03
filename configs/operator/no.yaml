@@ -1,1 +1,50 @@
+train:
+  path: '../data/dataset_train.pkl'
+  graph: 'veno_graph'
+  scaler: Null
+  normal: False
+  K: 2
+  batch_size: 20
+  shuffle: True
+  num_workers: 4
+  epochs: 150
+  milestones: [ 20, 40, 80, 100, 120, 140 ]
+  base_lr: 0.001
+  scheduler_gamma: 0.5
+  mask_way: 'patch'
+  mask_ratio: 0.75
+  save_dir: 'Neural_operator'
+  save_name: 'neural_operator'
+
+
+
+test:
+  path: '../data/dataset_test.pkl'
+  graph: 'veno_graph'
+  scaler: Null
+  normal: False
+  K: 2
+  batch_size: 20
+  shuffle: False
+  num_workers: 1
+  mask_way: 'patch'
+  mask_ratio: 0.75
+
+model:
+  gnn_layers: 3
+  no_layers: 3
+  mode: 10
+  in_dim: 5
+  use_exf: 1
+  time: 1
+  K: 2
+  act: gelu
+  mask_way: 'patch'
+  kernel: 'fno'
+  out_dim: 2
+  hidden_features: 64
+  width: 256
+  blocks: 16
+  H: 29
+  W: 58
 
