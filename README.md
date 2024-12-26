@@ -61,4 +61,4 @@ python inference.py # You may need to adjust the paths.
 
 ## Acknowledgement
 Parts of the code are adapted from the following repository. We thank the authors for their great contribution to the community:
-- [NeuralOperator: Learning in Infinite Dimensions]([https://github.com/princeton-vl/RAFT/tree/master](https://github.com/neuraloperator/neuraloperator)
+- [NeuralOperator]: Learning in Infinite Dimensions]([https://github.com/princeton-vl/RAFT/tree/master](https://github.com/neuraloperator/neuraloperator)
